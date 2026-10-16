@@ -1,0 +1,27 @@
+/* Category refresh: three equal editorial themes, tuned for small screens. */
+.category-hero{background:linear-gradient(145deg,#e8eee4,#f2eadf)}
+.category-orbit{position:relative;z-index:1;width:min(70%,290px);aspect-ratio:1;border:1px solid #aabca4;border-radius:50%;display:grid;place-items:center;background:#fbfaf7a8}
+.category-orbit:before,.category-orbit:after{content:"";position:absolute;border:1px solid #c6d1be;border-radius:50%}
+.category-orbit:before{inset:14%}.category-orbit:after{inset:29%}
+.category-orbit b{font:800 38px Manrope,Arial;color:#416a50;z-index:1}
+.category-orbit span{position:absolute;background:#fbfaf7;padding:4px 8px;border-radius:20px;font-size:8px;font-weight:700;letter-spacing:.1em}
+.category-orbit span:nth-child(1){top:9%;left:37%}.category-orbit span:nth-child(2){right:-10px;top:47%}.category-orbit span:nth-child(3){left:-18px;top:62%}
+.category-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.category-card{position:relative;overflow:hidden;min-height:280px;padding:25px;border-radius:12px;border:1px solid var(--line);background:#e9efe5;display:flex;flex-direction:column;align-items:flex-start;transition:transform .2s,box-shadow .2s}
+.category-card:hover{transform:translateY(-3px);box-shadow:0 12px 35px #25392b12}
+.category-card.travel{background:#edf0e6}.category-card.sport{background:#f1e9dc}.category-card.assorted{background:#ece9f2}
+.category-card>small{font-size:9px;letter-spacing:.13em;font-weight:700;color:#607665;margin-top:28px}
+.category-card h3{font:700 22px/1.2 Manrope,Arial;letter-spacing:-.04em;margin:13px 0 8px;max-width:230px}
+.category-card p{font-size:12px;color:#6d7b72;line-height:1.75;max-width:280px;margin:0 0 18px}
+.category-icon{display:grid;place-items:center;width:37px;height:37px;background:#ffffffb8;border-radius:50%;font-size:18px;color:#416a50}
+.category-link{font-size:11px;font-weight:700;margin-top:auto}
+.category-mark{position:absolute;right:15px;bottom:-46px;font:800 150px Manrope,Arial;color:#ffffff6b;pointer-events:none}
+.category-guides .visual{height:170px}.guide-symbol{position:absolute;inset:35px 0 0;display:grid;place-items:center;font:400 78px Manrope,Arial;color:#617d68}
+#transparencia{margin-top:28px}
+.art.travel{background:linear-gradient(135deg,#d7e6df,#eff0e3)}.art.sport{background:linear-gradient(135deg,#eadcc8,#e8eee4)}.art.useful{background:linear-gradient(135deg,#e4dfee,#f1e9dc)}
+.shape.travel:before{content:"";position:absolute;width:90px;height:90px;border:2px solid #668876;border-radius:50%;left:calc(50% - 45px);top:25px}
+.shape.travel:after{content:"";position:absolute;width:60px;height:30px;border-top:2px solid #668876;border-radius:50%;left:calc(50% - 30px);top:55px}
+.shape.sport:before{content:"◎";position:absolute;inset:8px;display:grid;place-items:center;font-size:62px;color:#8b765b}
+.shape.useful:before{content:"✳";position:absolute;inset:5px;display:grid;place-items:center;font-size:66px;color:#76658e}
+@media(max-width:850px){.category-grid{grid-template-columns:1fr 1fr}.category-card:last-child{grid-column:1/-1;min-height:230px}}
+@media(max-width:600px){.category-grid{grid-template-columns:1fr}.category-card:last-child{grid-column:auto}.category-card{min-height:240px}.category-orbit span:nth-child(2){right:-22px}.category-orbit span:nth-child(3){left:-28px}.category-hero{height:330px}}
