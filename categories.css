@@ -25,3 +25,18 @@
 .shape.useful:before{content:"✳";position:absolute;inset:5px;display:grid;place-items:center;font-size:66px;color:#76658e}
 @media(max-width:850px){.category-grid{grid-template-columns:1fr 1fr}.category-card:last-child{grid-column:1/-1;min-height:230px}}
 @media(max-width:600px){.category-grid{grid-template-columns:1fr}.category-card:last-child{grid-column:auto}.category-card{min-height:240px}.category-orbit span:nth-child(2){right:-22px}.category-orbit span:nth-child(3){left:-28px}.category-hero{height:330px}}
+
+/* Published editorial guides */
+.article-page{max-width:900px;margin:0 auto;padding:35px 24px 90px}
+.article-breadcrumb{font-size:11px;color:#78847b;margin-bottom:32px}.article-breadcrumb a:hover{text-decoration:underline}
+.article-page>article{max-width:720px;margin:0 auto}.article-page h1{font:700 clamp(36px,6vw,58px)/1.1 Manrope,Arial;letter-spacing:-.06em;margin:0 0 20px}
+.article-lead{font-size:18px;line-height:1.65;color:#68766d;max-width:680px}
+.article-meta{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#879087;border-bottom:1px solid var(--line);padding:18px 0 24px;margin-bottom:28px}
+.article-content{font-size:15px;line-height:1.85;color:#34443d}.article-content h2{font:700 25px/1.25 Manrope,Arial;letter-spacing:-.04em;margin:36px 0 12px;color:var(--ink)}
+.article-content p{margin:0 0 16px}.article-content ul{padding-left:22px;margin:10px 0 20px}.article-content li{padding:3px 0}
+.article-check{background:#edf1e9;border:1px solid #dbe4d7;border-radius:10px;padding:20px 24px;margin:30px 0}
+.article-check h3{font:700 17px Manrope,Arial;margin:0 0 8px}.article-disclosure{display:block;background:#f3f0e8;border-left:3px solid #8da486;padding:16px 20px;margin-top:38px;border-radius:0 8px 8px 0}
+.article-disclosure b{font:700 12px Manrope,Arial}.article-disclosure p{font-size:12px;margin:6px 0 0;color:#657168}
+.article-next{display:flex;justify-content:space-between;gap:16px;margin-top:24px;font-size:11px;font-weight:700}
+.guide-product-link{display:block;height:100%}.guide-product-link:hover h3{text-decoration:underline}.guide-read{font-weight:700;color:var(--darkgreen)}
+@media(max-width:600px){.article-page{padding:26px 20px 60px}.article-content{font-size:14px}.article-content h2{font-size:21px}.article-next{flex-direction:column}}
