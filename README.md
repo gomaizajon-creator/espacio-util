@@ -6,7 +6,7 @@ Web estática en español con guías y selecciones sobre **viajes**, **productos
 - `index.html`: portada, categorías y enlaces a las guías publicadas.
 - `guia-alojamiento.html`, `guia-correr.html`, `guia-productos.html`: guías editoriales prácticas.\n- `viaje-golf-royal-obidos.html`, `mercadillos-navidad-alsacia.html`: itinerarios de viaje.\n- `equipaje-golf-portugal.html`, `equipaje-mercadillos-navidad.html`: guías de productos y equipaje de Decathlon y Amazon.
 - `styles.css` y `categories.css`: diseño responsive.
-- `app.js`: tarjetas editoriales, filtros y buscador.
+- `site.js`: menú móvil y año del pie de página.
 - `afiliacion.html`: estado de los programas y aviso de afiliación.
 - `privacidad.html`: información preliminar sobre privacidad.
 
