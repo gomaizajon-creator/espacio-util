@@ -1,31 +1,17 @@
 # Espacio Útil
 
-Web estática en español con guías y recomendaciones para elegir accesorios de escritorio y teletrabajo.
+Web estática en español con guías y selecciones sobre **viajes**, **productos de deporte** y **productos varios**. El sitio se sirve con GitHub Pages y no requiere servicios de pago.
 
-## Archivos
-- `index.html`: portada, guías, listado demo y método editorial.
-- `styles.css`: diseño responsive.
-- `app.js`: tarjetas de ejemplo, filtros por categoría y buscador.
-- `afiliacion.html`: aviso preliminar de afiliación.
-- `privacidad.html`: borrador de información de privacidad.
+## Estructura
+- `index.html`: portada, categorías, guías y avisos.
+- `styles.css` y `categories.css`: diseño responsive.
+- `app.js`: tarjetas editoriales, filtros y buscador.
+- `afiliacion.html`: estado de los programas y aviso de afiliación.
+- `privacidad.html`: información preliminar sobre privacidad.
 
-## Estado actual
-Es un prototipo frontend. No contiene enlaces comerciales activos, productos verificados, seguimiento de comisiones, CMS, formularios ni analítica propia. Las fichas son ilustrativas y el usuario no debe tomarlas aún como recomendaciones de compra.
+## Estado de afiliación
+Espacio Útil **no tiene enlaces de afiliación activos**. La admisión a Booking.com, Decathlon Afiliados España y Amazon Afiliados España está pendiente. No se han añadido enlaces ficticios, productos concretos ni precios. Las tarjetas son temas editoriales en preparación, no recomendaciones verificadas.
 
-## Publicación con GitHub Pages
-El contenido está en la raíz de la rama `main`. Para desplegar sin coste con GitHub Pages en el plan gratuito, el repositorio normalmente debe ser público:
-1. En GitHub, abre **Settings → General → Danger Zone → Change repository visibility** y cambia el repositorio a **Public** solo si estás de acuerdo con hacer público el código fuente.
-2. Ve a **Settings → Pages**.
-3. En **Build and deployment**, elige **Deploy from a branch**.
-4. Selecciona la rama `main` y la carpeta `/(root)`; pulsa **Save**.
-5. Cuando termine el despliegue, la URL aparecerá en esa sección.
+Programas previstos: [Booking.com](https://www.booking.com/affiliate-program/v2/index.html), [Decathlon Afiliados España](https://afiliacion.decathlon.es/) y [Amazon Afiliados España](https://afiliados.amazon.es/). Son referencias informativas oficiales, no enlaces de afiliación de este sitio.
 
-## Antes de lanzar como negocio
-1. Validar el nicho y el nombre.
-2. Investigar demanda y palabras clave; crear contenido original y útil.
-3. Verificar productos, precios, disponibilidad y programas de afiliación.
-4. Solicitar admisión en los programas de afiliación y añadir enlaces aprobados.
-5. Completar aviso legal, privacidad y cookies conforme al titular y a las funciones reales.
-6. Probar móvil, accesibilidad, enlaces y metadatos SEO.
-
-No se garantizan ingresos; la monetización depende del tráfico, la calidad del contenido, la conversión y las condiciones de cada programa.
+GitHub Pages sirve los archivos estáticos sin coste dentro de las condiciones del plan aplicable al repositorio. Antes de añadir enlaces: solicitar admisión, obtener enlaces oficiales, comprobar productos e información y completar los avisos legales con los datos reales del titular. No se garantizan ingresos.
