@@ -40,3 +40,10 @@
 .article-next{display:flex;justify-content:space-between;gap:16px;margin-top:24px;font-size:11px;font-weight:700}
 .guide-product-link{display:block;height:100%}.guide-product-link:hover h3{text-decoration:underline}.guide-read{font-weight:700;color:var(--darkgreen)}
 @media(max-width:600px){.article-page{padding:26px 20px 60px}.article-content{font-size:14px}.article-content h2{font-size:21px}.article-next{flex-direction:column}}
+
+/* Static published-guide cards */
+#guias-publicadas .product{transition:transform .18s,box-shadow .18s}
+#guias-publicadas .product:hover{transform:translateY(-3px);box-shadow:0 12px 30px #25392b12}
+#guias-publicadas .product-info h3{font:700 16px/1.35 Manrope,Arial;letter-spacing:-.025em}
+#guias-publicadas .art{height:165px;position:relative;overflow:hidden;border-radius:8px 8px 0 0}
+#guias-publicadas .tag{position:absolute;z-index:2}
