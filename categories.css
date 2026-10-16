@@ -47,3 +47,9 @@
 #guias-publicadas .product-info h3{font:700 16px/1.35 Manrope,Arial;letter-spacing:-.025em}
 #guias-publicadas .art{height:165px;position:relative;overflow:hidden;border-radius:8px 8px 0 0}
 #guias-publicadas .tag{position:absolute;z-index:2}
+
+#guias-publicadas .art .guide-card-photo{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.guide-photo{margin:0 0 30px}
+.guide-photo img{display:block;width:100%;height:clamp(250px,48vw,440px);object-fit:cover;object-position:center;border-radius:12px}
+.guide-photo figcaption{font-size:11px;line-height:1.5;color:#78847b;margin-top:9px}
+@media(max-width:600px){#guias-publicadas .art{height:180px}.guide-photo img{height:240px;border-radius:9px}}
