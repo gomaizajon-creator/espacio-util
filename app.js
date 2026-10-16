@@ -1,10 +1,10 @@
 const products = [
-  {id:1,name:"Soporte ajustable para portátil",cat:"Soportes",type:"stand",tag:"ERGONOMÍA",desc:"Eleva la pantalla y ayuda a liberar espacio en el escritorio.",fit:"Para escritorios compactos"},
-  {id:2,name:"Lámpara de escritorio regulable",cat:"Iluminación",type:"lamp",tag:"ILUMINACIÓN",desc:"Una opción regulable para adaptar la luz a tu rutina.",fit:"Para trabajar y estudiar"},
-  {id:3,name:"Auriculares para llamadas",cat:"Audio",type:"audio",tag:"AUDIO",desc:"Prioriza comodidad, micrófono y compatibilidad con tus dispositivos.",fit:"Para videollamadas"},
-  {id:4,name:"Alfombrilla de escritorio",cat:"Soportes",type:"mat",tag:"ORGANIZACIÓN",desc:"Delimita la zona de trabajo y protege la superficie.",fit:"Para ordenar el escritorio"},
-  {id:5,name:"Micrófono USB compacto",cat:"Audio",type:"audio",tag:"AUDIO",desc:"Alternativa para mejorar la voz en reuniones y grabaciones.",fit:"Para reuniones y contenido"},
-  {id:6,name:"Soporte de sobremesa",cat:"Soportes",type:"stand",tag:"ESPACIO",desc:"Una forma sencilla de organizar dispositivos y accesorios.",fit:"Para escritorios pequeños"}
+  {id:1,name:"Alojamientos para una escapada",cat:"Viajes",type:"travel",tag:"ALOJAMIENTO",desc:"Guía en preparación: ubicación, condiciones y necesidades del viaje.",fit:"Tema editorial; sin ofertas verificadas"},
+  {id:2,name:"Material para empezar a correr",cat:"Deporte",type:"sport",tag:"CARRERA",desc:"Guía en preparación: uso, ajuste y criterios para comparar material.",fit:"Tema editorial; sin productos verificados"},
+  {id:3,name:"Accesorios para entrenar al aire libre",cat:"Deporte",type:"sport",tag:"AIRE LIBRE",desc:"Selección en preparación para explorar necesidades de entrenamiento.",fit:"Tema editorial; sin productos verificados"},
+  {id:4,name:"Ideas prácticas para viajar",cat:"Productos varios",type:"useful",tag:"VIAJE",desc:"Ideas de organización y artículos útiles, pendientes de investigación.",fit:"Tema editorial; sin productos verificados"},
+  {id:5,name:"Pequeñas mejoras para casa",cat:"Productos varios",type:"useful",tag:"HOGAR",desc:"Guía en preparación para comparar soluciones de uso cotidiano.",fit:"Tema editorial; sin productos verificados"},
+  {id:6,name:"Planifica una escapada con criterio",cat:"Viajes",type:"travel",tag:"PLANIFICACIÓN",desc:"Lista de aspectos que conviene revisar antes de reservar.",fit:"Tema editorial; sin enlaces activos"}
 ];
 let filter = "Todos";
 const grid = document.querySelector("#grid");
@@ -13,7 +13,7 @@ function render() {
   const q = search.value.trim().toLocaleLowerCase("es");
   const items = products.filter(p => (filter === "Todos" || p.cat === filter) &&
     `${p.name} ${p.cat} ${p.desc} ${p.fit}`.toLocaleLowerCase("es").includes(q));
-  grid.innerHTML = items.map(p => `<article class="product"><div class="art ${p.type}"><span class="tag">DEMO · ${p.tag}</span><div class="shape ${p.type}"></div></div><div class="product-info"><small>${p.cat} · ${p.tag}</small><h3>${p.name}</h3><p>${p.desc}</p><div class="product-meta"><span>Precio por verificar</span><button disabled>Enlace pendiente</button></div></div></article>`).join("");
+  grid.innerHTML = items.map(p => `<article class="product"><div class="art ${p.type}"><span class="tag">EN PREPARACIÓN · ${p.tag}</span><div class="shape ${p.type}"></div></div><div class="product-info"><small>${p.cat} · ${p.tag}</small><h3>${p.name}</h3><p>${p.desc}</p><div class="product-meta"><span>Información pendiente</span><button disabled>Enlace pendiente</button></div></div></article>`).join("");
   document.querySelector("#empty").hidden = items.length > 0;
 }
 document.querySelectorAll("[data-filter]").forEach(button => button.addEventListener("click", () => {
