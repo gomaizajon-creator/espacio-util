@@ -3,14 +3,15 @@
 Web estática en español con guías y selecciones sobre **viajes**, **productos de deporte** y **productos varios**. El sitio se sirve con GitHub Pages y no requiere servicios de pago.
 
 ## Estructura
-- `index.html`: portada, categorías, guías y avisos.
+- `index.html`: portada, categorías y enlaces a las guías publicadas.
+- `guia-alojamiento.html`, `guia-correr.html`, `guia-productos.html`: guías editoriales prácticas.
 - `styles.css` y `categories.css`: diseño responsive.
 - `app.js`: tarjetas editoriales, filtros y buscador.
 - `afiliacion.html`: estado de los programas y aviso de afiliación.
 - `privacidad.html`: información preliminar sobre privacidad.
 
 ## Estado de afiliación
-Espacio Útil **no tiene enlaces de afiliación activos**. La admisión a Booking.com, Decathlon Afiliados España y Amazon Afiliados España está pendiente. No se han añadido enlaces ficticios, productos concretos ni precios. Las tarjetas son temas editoriales en preparación, no recomendaciones verificadas.
+Espacio Útil **no tiene enlaces de afiliación activos**. La admisión a Booking.com, Decathlon Afiliados España y Amazon Afiliados España está pendiente. No se han añadido enlaces ficticios, productos concretos ni precios. Las tres guías publicadas son contenido editorial general; no presentan productos probados ni enlaces comerciales.
 
 Programas previstos: [Booking.com](https://www.booking.com/affiliate-program/v2/index.html), [Decathlon Afiliados España](https://afiliacion.decathlon.es/) y [Amazon Afiliados España](https://afiliados.amazon.es/). Son referencias informativas oficiales, no enlaces de afiliación de este sitio.
 
