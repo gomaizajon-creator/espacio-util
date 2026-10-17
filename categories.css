@@ -70,3 +70,18 @@
 .home-hero .trust span{white-space:nowrap}
 @media(max-width:850px){.home-photo-mosaic{max-width:600px}}
 @media(max-width:560px){.home-photo-mosaic{height:290px;grid-template-columns:1.2fr .8fr;gap:8px}.home-photo-large,.home-photo-small{border-radius:11px}.home-photo-large figcaption{left:13px;bottom:12px}.home-photo-large figcaption b{font-size:16px}.home-photo-large figcaption small{font-size:7px}.home-photo-small span{left:9px;bottom:9px;font-size:10px}.home-photo-credit{bottom:-20px;font-size:8px}}
+
+/* Affiliate product cards with original illustrative image contact sheets */
+.affiliate-section{padding:22px;margin:30px 0;background:linear-gradient(135deg,#edf1e9,#f4f1e8)}
+.affiliate-section h3{margin-bottom:18px}
+.affiliate-products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.affiliate-product{background:#fff;border:1px solid #dfe6dd;border-radius:9px;overflow:hidden;min-width:0}
+.affiliate-product-visual{display:block;height:155px;position:relative;overflow:hidden;background:#dfe5d5}
+.affiliate-product-visual img{position:absolute;width:400%;height:300%;max-width:none;object-fit:fill;left:calc(var(--tile-x)*-100%);top:calc(var(--tile-y)*-100%)}
+.affiliate-product-copy{padding:13px 15px 15px}
+.affiliate-product-copy h4{font:700 14px/1.4 Manrope,Arial;margin:0 0 5px}
+.affiliate-product-copy h4 a:hover,.affiliate-product-copy p a:hover{text-decoration:underline;text-decoration-color:#7d9b81;text-underline-offset:3px}
+.affiliate-product-copy p{font-size:11px;line-height:1.65;color:#748078;margin:0}
+.affiliate-product-copy p a{color:inherit}
+.affiliate-image-note{font-size:10px;color:#77847a;margin:13px 0 0!important}
+@media(max-width:560px){.affiliate-section{padding:17px 14px}.affiliate-products{grid-template-columns:1fr}.affiliate-product-visual{height:190px}}
